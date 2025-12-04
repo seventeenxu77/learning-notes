@@ -1,0 +1,9 @@
+#define SERIAL_PORT_BASE 0x3f8
+char swap_case(char c) {
+    if (islower(c)) {
+        return toupper(c);
+    } else if (isupper(c)) {
+        return tolower(c);
+    }
+    return c;
+}
